@@ -16,8 +16,9 @@ def gateway():
     # clear_count = 0
     if request.method == 'POST':
         title = request.form['title']
+        
         if 'submit' in request.form:
-            btn_count += 1
+            btn_count = btn_count + 1
         # if not title:
         #     flash("Title required")
 
