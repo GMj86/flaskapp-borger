@@ -13,13 +13,16 @@ def index():
 def gateway():
     if request.method == 'POST':
         title = request.form['title']
-        if 'clear' in request.form:
-            struct.clear()
+        
         if not title:
             flash("Title required")
 
         else:
             struct.append(title)
+
+    if request.method() == 'POST':
+        if 'clear' in request.form:
+            struct.clear()
 
     return render_template('gateway.html')
 
