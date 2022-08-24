@@ -1,4 +1,20 @@
 <html>
-    <head></head>
-    <body><a href="wikipedia.org">Wiki</a></body>
+    <head>
+        <link rel="stylesheet" href='/static/main.css' />
+    </head>
+    <body>
+        <a href="wikipedia.org">Wiki</a>
+        <a href="{{ url_for('index') }}">FlaskApp</a>
+
+        <form method="post">
+            <label for="title">Title</label>
+            <br>
+            <input type="text" name="title"
+                   placeholder="Message title"
+                   value="{{ request.form['title'] }}"></input>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
 </html>

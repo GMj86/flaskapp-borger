@@ -7,5 +7,12 @@
     <p>My first Flask site</p>
     <a href="{{ url_for('index') }}">FlaskApp</a>
     <a href="{{ url_for('gateway') }}">Gateway</a>
+  
+    <h3>From Struct</h3>
+    {% for msg in struct %}
+    <div class="struct">
+      <p>{{ msg }}</p>
+    </div>
+    {% endfor %}
   </body>
 </html>
