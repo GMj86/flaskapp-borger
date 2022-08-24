@@ -12,13 +12,13 @@ def index():
 
 @app.route('/gateway', methods=['GET','POST'])
 def gateway():
-    # btn_count = 0
-    # clear_count = 0
+    global btn_count, clear_count
+
     if request.method == 'POST':
         title = request.form['title']
         
         if 'submit' in request.form:
-            btn_count = btn_count + 1
+            btn_count += 1
         # if not title:
         #     flash("Title required")
 
@@ -26,8 +26,8 @@ def gateway():
 
     # if request.method == 'POST':
         if 'clear' in request.form:
-            # btn_count = 0
-            # clear_count += 1
+            btn_count = 0
+            clear_count += 1
             struct.clear()
 
     return render_template('gateway.html')
