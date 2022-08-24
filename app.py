@@ -3,17 +3,18 @@ from flask import Flask, render_template, request, url_for, flash, redirect
 app = Flask(__name__)
 
 struct = []
-
+btn_count = 0
+clear_count = 0
 
 @app.route('/')
 def index():
-    return render_template('index.html', struct=struct)
+    return render_template('index.html', struct=struct, btn_count=btn_count,clear_count=clear_count)
 
 @app.route('/gateway', methods=['GET','POST'])
 def gateway():
     if request.method == 'POST':
         title = request.form['title']
-        
+        btn_count += 1
         # if not title:
         #     flash("Title required")
 
@@ -21,6 +22,8 @@ def gateway():
 
     # if request.method == 'POST':
         if 'clear' in request.form:
+            btn_count = 0
+            clear_count += 1
             struct.clear()
 
     return render_template('gateway.html')
