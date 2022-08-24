@@ -20,7 +20,7 @@ def gateway():
         else:
             struct.append(title)
 
-    if request.method() == 'POST':
+    if request.method == 'POST':
         if 'clear' in request.form:
             struct.clear()
 
