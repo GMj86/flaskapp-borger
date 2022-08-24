@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, url_for, redirect
+from multiprocessing import Value
 
 app = Flask(__name__)
 
@@ -8,7 +9,8 @@ clear_count = 0
 
 @app.route('/')
 def index():
-    return render_template('index.html', struct=struct, btn_count=btn_count,clear_count=clear_count)
+    # return render_template('index.html', struct=struct, btn_count=btn_count,clear_count=clear_count)
+    return render_template('some.html')
 
 @app.route('/gateway', methods=['GET','POST'])
 def gateway():
