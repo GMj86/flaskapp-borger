@@ -20,8 +20,8 @@ def gateway():
         struct.append(title)
 
     # if request.method == 'POST':
-    #     if 'clear' in request.form:
-    #         struct.clear()
+        if 'clear' in request.form:
+            struct.clear()
 
     return render_template('gateway.html')
 
