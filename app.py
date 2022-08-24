@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for, flash, redirect
+from flask import Flask, render_template, request, url_for, redirect
 
 app = Flask(__name__)
 
@@ -12,6 +12,8 @@ def index():
 
 @app.route('/gateway', methods=['GET','POST'])
 def gateway():
+    # btn_count = 0
+    # clear_count = 0
     if request.method == 'POST':
         title = request.form['title']
         if 'submit' in request.form:
@@ -23,8 +25,8 @@ def gateway():
 
     # if request.method == 'POST':
         if 'clear' in request.form:
-            btn_count = 0
-            clear_count += 1
+            # btn_count = 0
+            # clear_count += 1
             struct.clear()
 
     return render_template('gateway.html')
