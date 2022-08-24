@@ -13,7 +13,8 @@ def index():
 def gateway():
     if request.method == 'POST':
         title = request.form['title']
-
+        if request.form['submit'] == "clear":
+            struct.clear()
         if not title:
             flash("Title required")
 
