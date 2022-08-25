@@ -419,7 +419,7 @@ filter: brightness(50%);
 filter: brightness(50%);
 }
 
-}
+
 .burgerlist {
     position: absolute;
     width:900px;
@@ -478,9 +478,9 @@ filter: brightness(50%);
     list-style-type: none;
   }
 
-
+/*
 {
-outline: solid 1px orangered;
+    outline: solid 1px orangered;
 }
 /*
 {

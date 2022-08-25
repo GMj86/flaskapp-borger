@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,161 +8,181 @@
     <title>Document</title>
     <link rel="stylesheet" style="text/css" href="{{ url_for('static', filename='../static/some.css') }}" />
 </head>
-<body  style="background-color: rgb(14, 42, 77)">
-    <div class="container">
-        <hr style="width:105%; height:10px; background-color: rgb(14, 42, 77); border:none; top: 120px; position: absolute; left:-5px">
-        <div class="container2">
 
-        <div class="blues">
-        <h1>
-            Bleu's 
-        </h1>
+<body style="background-color: rgb(14, 42, 77)">
+    <form method="POST">
+        <div class="container">
+            <hr
+                style="width:105%; height:10px; background-color: rgb(14, 42, 77); border:none; top: 120px; position: absolute; left:-5px">
+            <div class="container2">
+
+                <div class="blues">
+                    <h1>
+                        Bleu's
+                    </h1>
+                </div>
+                <div class="head">
+                    <nav>
+                        <h1>Menu</h1>
+                        <p>Select item to add to cart</p>
+                    </nav>
+                </div>
+            </div>
+            <div class="cartbox">
+                <div class="cart">
+                    <h2>Cart</h2>
+                    <h5>
+                        Buttons Pressed = {{ btn_count }}
+                    </h5>
+                </div>
+                <div class="total">
+                    <h2>Total + Tax</h2>
+                </div>
+            </div>
+            <div class="foodtypes">
+                <div class="burgerd">
+                    <ul>
+                        <img src="../static/theburg.png" alt="">
+                        <li>
+                            Burgers
+                        </li>
+                    </ul>
+                </div>
+                <div class="sided">
+                    <ul>
+                        <img src="../static/friess.webp" alt="">
+                        <li>
+                            Sides
+                        </li>
+                    </ul>
+                </div>
+                <div class="Burgerd">
+                    <ul>
+                        <img src="../static/drink.png" alt="">
+                        <li>
+                            Drinks
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c1">
+                <div class="burger1">
+                    <ul>
+                        <input type="image" src="{{url_for('static',filename = '../static/burger1.jpg')}}"
+                            name="burger1" class="btTxt submit" id="burger1" />
+                        <li>
+                            Cheeseburger
+                        </li>
+                    </ul>
+                </div>
+                <div class="side1">
+                    <ul>
+                        <input type="image" src="{{url_for('static',filename = '../static/side1.jpg')}}" name="side1"
+                            class="btTxt submit" id="side1" />
+                        <li>
+                            French Fries
+                        </li>
+                    </ul>
+                </div>
+                <div class="drink1">
+                    <ul>
+                        <input type="image" src="{{url_for('static',filename = '../static/drink1.jpg')}}" name="drink1"
+                            class="btTxt submit" id="drink1" />
+                        <li>
+                            Coke Products
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c2">
+                <div class="burger2">
+                    <ul>
+                        <input type="image" src="{{url_for('static',filename = '../static/burger2.jpg')}}"
+                            name="burger2" class="btTxt submit" id="burger2" />
+                        <li>
+                            Double Cheeseburger
+                        </li>
+                    </ul>
+                </div>
+                <div class="side2">
+                    <ul>
+                        <input type="image" src="{{url_for('static',filename = '../static/side2.jpg')}}" name="side2"
+                            class="btTxt submit" id="side2" />
+                        <li>
+                            Sweet Potato Fries
+                        </li>
+                    </ul>
+                </div>
+                <div class="drink2">
+                    <ul>
+                        <input type="image" src="{{url_for('static',filename = '../static/drink2.jpg')}}" name="drink2"
+                            class="btTxt submit" id="drink2" />
+                        <li>
+                            Lemonade
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c3">
+                <div class="burger3">
+                    <ul>
+                        <input type="image" src="{{url_for('static',filename = '../static/burger3.jpg')}}"
+                            name="burger3" class="btTxt submit" id="burger3" />
+                        <li>
+                            Bacon Cheeseburger
+                        </li>
+                    </ul>
+                </div>
+                <div class="side3">
+                    <ul>
+                        <input type="image" src="{{url_for('static',filename = '../static/side3.jpg')}}" name="side3"
+                            class="btTxt submit" id="side3" />
+                        <li>
+                            Curly Fries
+                        </li>
+                    </ul>
+                </div>
+                <div class="drink3">
+                    <ul>
+                        <input type="image" src="{{url_for('static',filename = '../static/drink3.jpg')}}" name="drink3"
+                            class="btTxt submit" id="drink3" />
+                        <li>
+                            Sweet Tea
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c4">
+                <div class="burger4">
+                    <ul>
+                        <input type="image" src="{{url_for('static',filename = '../static/burger4.jpg')}}"
+                            name="burger4" class="btTxt submit" id="burger4" />
+                        <li>
+                            Chicken Burger
+                        </li>
+                    </ul>
+                </div>
+                <div class="side4">
+                    <ul>
+                        <input type="image" src="{{url_for('static',filename = '../static/side4.jpg')}}" name="side4"
+                            class="btTxt submit" id="side4" />
+                        <li>
+                            Apple Slices
+                        </li>
+                    </ul>
+                </div>
+                <div class="drink4">
+                    <ul>
+                        <input type="image" src="{{url_for('static',filename = '../static/drink4.jpg')}}" name="drink4"
+                            class="btTxt submit" id="drink4" />
+                        <li>
+                            Bubble Tea
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="head">
-            <nav>
-            <h1>Menu</h1>
-            <p>Select item to add to cart</p>
-            </nav>
-        </div>
-        </div>
-        <div class="cartbox">
-            <div class="cart">
-                <h2>Cart</h2>
-            </div>
-            <div class="total">
-                <h2>Total + Tax</h2>
-            </div>
-        </div>
-        <div class="foodtypes">
-            <div class="burgerd">
-            <ul>
-                <img src="../static/theburg.png" alt="">
-                <li>
-                    Burgers
-                </li>
-            </ul>
-            </div>
-            <div class="sided">
-                <ul>
-                    <img src="../static/friess.webp" alt="">
-                    <li>
-                        Sides
-                    </li>
-                </ul>
-            </div>
-            <div class="Burgerd">
-                <ul>
-                    <img src="../static/drink.png" alt="">
-                    <li>
-                        Drinks
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="c1">
-            <div class="burger1">
-            <ul>
-                <input type="image" src="{{url_for('static',filename = '../static/burger1.jpg')}}" name="burger1" class="btTxt submit" id="burger1" />
-                <li>
-                    Cheeseburger
-                </li>
-            </ul>
-            </div>
-            <div class="side1">
-                <ul>
-                    <input type="image" src="{{url_for('static',filename = '../static/side1.jpg')}}" name="side1" class="btTxt submit" id="side1" />
-                    <li>
-                        French Fries
-                    </li>
-                </ul>
-            </div>
-            <div class="drink1">
-                <ul>
-                    <input type="image" src="{{url_for('static',filename = '../static/drink1.jpg')}}" name="drink1" class="btTxt submit" id="drink1" />
-                    <li>
-                        Coke Products
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="c2">
-            <div class="burger2">
-            <ul>
-                <input type="image" src="{{url_for('static',filename = '../static/burger2.jpg')}}" name="burger2" class="btTxt submit" id="burger2" />
-                <li>
-                    Double Cheeseburger
-                </li>
-            </ul>
-            </div>
-            <div class="side2">
-                <ul>
-                    <input type="image" src="{{url_for('static',filename = '../static/side2.jpg')}}" name="side2" class="btTxt submit" id="side2" />
-                    <li>
-                        Sweet Potato Fries
-                    </li>
-                </ul>
-            </div>
-            <div class="drink2">
-                <ul>
-                    <input type="image" src="{{url_for('static',filename = '../static/drink2.jpg')}}"name="drink2" class="btTxt submit" id="drink2" />
-                    <li>
-                        Lemonade
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="c3">
-            <div class="burger3">
-            <ul>
-                <input type="image" src="{{url_for('static',filename = '../static/burger3.jpg')}}" name="burger3" class="btTxt submit" id="burger3" />
-                <li>
-                    Bacon Cheeseburger
-                </li>
-            </ul>
-            </div>
-            <div class="side3">
-                <ul>
-                    <input type="image" src="{{url_for('static',filename = '../static/side3.jpg')}}" name="side3" class="btTxt submit" id="side3" />
-                    <li>
-                        Curly Fries
-                    </li>
-                </ul>
-            </div>
-            <div class="drink3">
-                <ul>
-                    <input type="image" src="{{url_for('static',filename = '../static/drink3.jpg')}}" name="drink3" class="btTxt submit" id="drink3" />
-                    <li>
-                        Sweet Tea
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="c4">
-            <div class="burger4">
-            <ul>
-                <input type="image" src="{{url_for('static',filename = '../static/burger4.jpg')}}" name="burger4" class="btTxt submit" id="burger4" />
-                <li>
-                    Chicken Burger
-                </li>
-            </ul>
-            </div>
-            <div class="side4">
-                <ul>
-                    <input type="image" src="{{url_for('static',filename = '../static/side4.jpg')}}" name="side4" class="btTxt submit" id="side4" />
-                    <li>
-                        Apple Slices
-                    </li>
-                </ul>
-            </div>
-            <div class="drink4">
-                <ul>
-                    <input type="image" src="{{url_for('static',filename = '../static/drink4.jpg')}}" name="drink4" class="btTxt submit" id="drink4" />
-                    <li>
-                        Bubble Tea
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </form>
 </body>
+
 </html>
