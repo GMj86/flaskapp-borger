@@ -13,9 +13,9 @@ def index():
     global btn_count, clear_count
 
     if request.method == 'POST':
-        if 'burger1' in request.form:
+        if 'btTxt submit' in request.form:
             btn_count += 1
-
+    print(btn_count)
     return render_template('some.html', btn_count=btn_count)
 
 @app.route('/gateway', methods=['GET','POST'])
