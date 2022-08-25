@@ -7,6 +7,7 @@
     font-family: fantasy;
 }
 
+
 .container {
     height: 99vh;
     width: 1050px;
@@ -108,12 +109,20 @@
     top: 60px;
     left:60px;;
     box-shadow: 2px 2px 1px#011622;
-
-
 }
+.cartitems {
+border: 2px black;
+position: absolute;
+width: 290px;
+height: 14vh;
+left: 250px;
+top: 16px;
+}
+
+
 .total {
     border: 2px solid darkslateblue;
-    text-align: right;
+    text-align: left;
     width:200px;
     height:10vh;
     color:rgb(11, 41, 236);
@@ -124,6 +133,20 @@
     top:60px;;
     box-shadow: 2px 2px 1px#011622;
 
+
+}
+.total h2{
+width:60px;
+height: 12vh;
+
+}
+.totalmoney {
+    border: 2px black;
+    position: absolute;
+    width: 150px;
+    height: 14vh;
+    right: 20px;
+    top: 16px;
 
 }
 
@@ -212,7 +235,7 @@ text-align: center;
     letter-spacing: 1px;
     
 }
-.c1 img {
+.c1 input {
     max-width:80px;
     top:20px;
     color:orange;
@@ -226,7 +249,7 @@ text-align: center;
     filter: drop-shadow(1px 1px 1px black) ;
 }
 
-.c1:hover img{
+.c1:hover input{
     transform: rotate(360deg);
 }
 .c2 {
@@ -245,7 +268,7 @@ text-align: center;
     font-size: 14px;
 }
 
-.c2 ul img {
+.c2 ul input {
     max-width:80px;
     top:20px;
     color:orange;
@@ -259,7 +282,7 @@ text-align: center;
     transition: transform .7s ease-in-out;
     filter: drop-shadow(1px 1px 1px black) ;
 }
-.c2:hover img {
+.c2:hover input {
     transform: rotate(360deg);
 }
 
@@ -279,7 +302,7 @@ text-align: center;
     font-size: 14px;
   }
 
-.c3 ul img {
+.c3 ul input {
     max-width:80px;
     top:20px;
     color:orange;
@@ -293,7 +316,7 @@ text-align: center;
     transition: transform .7s ease-in-out;
     filter: drop-shadow(1px 1px 1px black) ;
 }
-.c3:hover img {
+.c3:hover input {
     transform: rotate(360deg);
 }
 
@@ -315,7 +338,7 @@ text-align: center;
     font-size: 14px;
   }
 
-.c4 ul img {
+.c4 ul input {
     max-width:80px;
     top:20px;
     color:orange;
@@ -329,7 +352,7 @@ text-align: center;
     transition: transform .7s ease-in-out;
     filter: drop-shadow(1px 1px 1px black) ;
 }
-.c4:hover img {
+.c4:hover input {
     transform: rotate(360deg);
 
 
@@ -394,7 +417,7 @@ text-align: center;
   }
 
 
- {
+* {
 outline: solid 1px orangered;
 }
 /*
