@@ -249,9 +249,25 @@ text-align: center;
     filter: drop-shadow(1px 1px 1px black) ;
 }
 
-.c1:hover input{
+.burger1:hover input{
     transform: rotate(360deg);
 }
+.side1:hover input{
+    transform: rotate(360deg);
+}
+.drink1:hover input{
+    transform: rotate(360deg);
+}
+.burger1:active {
+filter: brightness(50%);
+}
+.side1:active {
+filter: brightness(50%);
+}
+.drink1:active {
+filter: brightness(50%);
+}
+
 .c2 {
     position: absolute;
     width:300px;
@@ -282,8 +298,24 @@ text-align: center;
     transition: transform .7s ease-in-out;
     filter: drop-shadow(1px 1px 1px black) ;
 }
-.c2:hover input {
+
+.burger2:hover input{
     transform: rotate(360deg);
+}
+.side2:hover input{
+    transform: rotate(360deg);
+}
+.drink2:hover input{
+    transform: rotate(360deg);
+}
+.burger2:active {
+filter: brightness(50%);
+}
+.side2:active {
+filter: brightness(50%);
+}
+.drink2:active {
+filter: brightness(50%);
 }
 
 .c3 {
@@ -316,11 +348,25 @@ text-align: center;
     transition: transform .7s ease-in-out;
     filter: drop-shadow(1px 1px 1px black) ;
 }
-.c3:hover input {
+
+.burger3:hover input{
     transform: rotate(360deg);
 }
-
-
+.side3:hover input{
+    transform: rotate(360deg);
+}
+.drink3:hover input{
+    transform: rotate(360deg);
+}
+.burger3:active {
+filter: brightness(50%);
+}
+.side3:active {
+filter: brightness(50%);
+}
+.drink3:active {
+filter: brightness(50%);
+}
 
 .c4 {
     position: absolute;
@@ -352,10 +398,25 @@ text-align: center;
     transition: transform .7s ease-in-out;
     filter: drop-shadow(1px 1px 1px black) ;
 }
-.c4:hover input {
+
+.burger4:hover input{
     transform: rotate(360deg);
-
-
+}
+.side4:hover input{
+    transform: rotate(360deg);
+}
+.drink4:hover input{
+    transform: rotate(360deg);
+}
+.burger4:active {
+filter: brightness(50%);
+}
+.side4:active {
+filter: brightness(50%);
+}
+.drink4:active {
+filter: brightness(50%);
+}
 
 }
 .burgerlist {
