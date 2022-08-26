@@ -18,7 +18,10 @@ def index():
             print("pressed")
             btn_count += 1
         elif val != 'btn':
-            print('pressed in val==btn')
+            print('pressed in val==btn;\nactual val = ',val)
+           # print(request.form['drink1'])
+            print(request.form.get('drink1'))
+            print("flag:",'drink1' in request.form)
             btn_count += 10
         else:
             print('something not right')
