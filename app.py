@@ -13,7 +13,7 @@ def index():
     global btn_count
 
     if request.method == 'POST':
-        if request.form['burger1'] != None:
+        if request.form['burger1'] != False:
             print("pressed")
             btn_count += 1
     print(btn_count)
