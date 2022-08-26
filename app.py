@@ -13,7 +13,8 @@ def index():
     global btn_count
 
     if request.method == 'POST':
-        # val = request.form.get('burger1')
+        #val = request.form['burger1']
+        #print(val)
         if request.form.get('drink1') == 'btn':
             print("pressed")
             btn_count += 1
@@ -25,6 +26,8 @@ def index():
             print(request.form.get('drink1'))
             print("flag:",'drink1' in request.form)
             btn_count += 10
+        elif request.form.get('drink1',None) == 'btn':
+            print("We in here pt2")
         else:
             print('something not right')
     print(btn_count)
