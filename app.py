@@ -14,12 +14,14 @@ def index():
 
     if request.method == 'POST':
         val = request.form.get('burger1')
-        if val != None:
+        if request.form.get('drink1') == 'btn':
             print("pressed")
             btn_count += 1
-        elif val == 'btn':
+        elif val != 'btn':
             print('pressed in val==btn')
             btn_count += 10
+        else:
+            print('something not right')
     print(btn_count)
     return render_template('some.html', btn_count=btn_count)
 
