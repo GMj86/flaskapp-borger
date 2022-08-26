@@ -15,19 +15,15 @@ def index():
     if request.method == 'POST':
         #val = request.form['burger1']
         #print(val)
-        if request.form.get('drink1') == 'btn':
-            print("pressed")
-            btn_count += 1
-        elif 'drink1' in request.form:
+        # if request.form.get('drink1') == 'btn':
+        #     print("pressed")
+        #     btn_count += 1
+        if 'drink1' in request.form:
             print("we here")
-        # elif val != 'btn':
-        #     print('pressed in val==btn;\nactual val = ',val)
-           # print(request.form['drink1'])
-            print(request.form.get('drink1'))
-            print("flag:",'drink1' in request.form)
-            btn_count += 10
-        elif request.form.get('drink1',None) == 'btn':
-            print("We in here pt2")
+            btn_count += 1
+
+        # elif request.form.get('drink1',None) == 'btn':
+        #     print("We in here pt2")
         else:
             print('something not right')
     print(btn_count)
