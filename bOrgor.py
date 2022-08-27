@@ -4,6 +4,12 @@ class FoodItem:
         self.name = name
         self.price = price
 
+    def getprice(self):
+        return self.price
+
+    def __str__(self):
+        return self.name + ' : '+ str(self.getprice())        
+
 
 class Burger(FoodItem):
     def __init__(self, name, price, extras: list) -> None:
@@ -26,10 +32,21 @@ class Order:
     def __init__(self,customer):
         self.name = customer
         self.struct = []
+
     def add(self,item):
         self.struct.append(item)
+
     def cancel(self):
         self.struct.clear()
+
+    def get_items(self):
+        return self.struct
+
+    def get_item(self, index: int) -> FoodItem:
+        return self.struct[index]
+
+    def get_total(self) -> float:
+        return 99.99
 
 
 # def user_input_burger():
