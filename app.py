@@ -13,8 +13,8 @@ def index():
     global btn_count
 
     if request.method == 'post':
-        if request.form['btTxt submit'] == 'btn':
-            btn_count+=1
+        # if request.form['btTxt submit'] == 'btn':
+        #     btn_count+=1
 
         if 'drink1' in request.form:
             btn_count += 1
