@@ -12,15 +12,17 @@ class FoodItem:
 
 
 class Burger(FoodItem):
-    def __init__(self, name, price, extras: list) -> None:
-        super().__init__(name, price)
-        self.extras = extras
+    # def __init__(self, name, price, extras: list) -> None:
+    #     super().__init__(name, price)
+    #     self.extras = extras
+    pass
 
 class Drink(FoodItem):
-    def __init__(self, name, price, extras: list, ice: bool) -> None:
-        super().__init__(name, price)
-        self.extras = extras
-        self.ice = ice
+    # def __init__(self, name, price, extras: list, ice: bool) -> None:
+    #     super().__init__(name, price)
+    #     self.extras = extras
+    #     self.ice = ice
+    pass
 class Side(FoodItem):
     pass
 
