@@ -1,4 +1,4 @@
-
+## FoodInfo
 class FoodItem:
     def __init__(self, name, price) -> None:
         self.name = name
@@ -46,7 +46,8 @@ class Order:
 
     def get_item(self, index: int) -> FoodItem:
         return self.struct[index]
-
+    
+    ##REDO
     def get_total(self) -> float:
         return 99.99
 

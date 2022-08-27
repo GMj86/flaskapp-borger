@@ -1,10 +1,14 @@
-from hashlib import new
+## GG Solutions INC
+# 8/27
+##
 from flask import Flask, render_template, request
-from core import FoodInfo
+from core import *
 from bOrgor import *
 app = Flask(__name__)
 
 struct = []
+
+# Where order is declared/created
 order = Order("bob")
 btn_count = 0
 clear_count = 0
@@ -79,10 +83,12 @@ def index():
         else:
             print('something not right')
             
-    print(order.get_items())
-    
+    # print(order.get_items())
+
+    ## Where update values will be displayed
     return render_template('some.html', value_1=order.get_items(), value_2=order.get_total())
 
+## IGNORE ## For testing
 # @app.route('/gateway', methods=['GET','POST'])
 # def gateway():
 #     global btn_count, clear_count
@@ -104,6 +110,6 @@ def index():
 #             struct.clear()
 
 #     return render_template('gateway.html')
-
+## ###
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=8080)
