@@ -12,7 +12,7 @@ def index():
     # return render_template('index.html', struct=struct, btn_count=btn_count,clear_count=clear_count)
     global btn_count
 
-    if request.method == 'POST':
+    if request.method == 'get':
 
         if 'drink1' in request.form:
             btn_count += 1
