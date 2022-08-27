@@ -79,8 +79,9 @@ def index():
         else:
             print('something not right')
             
-    print(btn_count)
-    return render_template('some.html', value1=order.get_items(), value_2=order.get_total())
+    print(order.get_items())
+    
+    return render_template('some.html', value_1=order.get_items(), value_2=order.get_total())
 
 # @app.route('/gateway', methods=['GET','POST'])
 # def gateway():
