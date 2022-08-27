@@ -12,10 +12,11 @@ def index():
     # return render_template('index.html', struct=struct, btn_count=btn_count,clear_count=clear_count)
     global btn_count
 
-    if request.method == 'get':
+    if request.method == 'post':
 
         if 'drink1' in request.form:
             btn_count += 1
+            print('drink1 pressed')
         if 'drink2' in request.form:
             print('drink2 pressed')
         if 'drink3' in request.form:
@@ -25,6 +26,7 @@ def index():
 
         if 'side1' in request.form:
             btn_count += 1
+            print('side1 pressed')
         if 'side2' in request.form:
             print('side2 pressed')
         if 'side3' in request.form:
@@ -34,6 +36,7 @@ def index():
 
         if 'burger1' in request.form:
             btn_count += 1
+            print('burger1 pressed')
         if 'burger2' in request.form:
             print('burger2 pressed')
         if 'burger3' in request.form:
