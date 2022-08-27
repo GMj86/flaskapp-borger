@@ -1,3 +1,5 @@
+
+
 class FoodInfo:
     def __init__(self,name,price):
         self.name = name

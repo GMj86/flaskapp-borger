@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request, url_for, redirect
-from multiprocessing import Value
-
+from flask import Flask, render_template, request
+from core import FoodInfo
+from bOrgor import *
 app = Flask(__name__)
 
 struct = []
@@ -46,27 +46,27 @@ def index():
     print(btn_count)
     return render_template('some.html', btn_count=btn_count)
 
-@app.route('/gateway', methods=['GET','POST'])
-def gateway():
-    global btn_count, clear_count
+# @app.route('/gateway', methods=['GET','POST'])
+# def gateway():
+#     global btn_count, clear_count
 
-    if request.method == 'POST':
-        title = request.form['title']
+#     if request.method == 'POST':
+#         title = request.form['title']
         
-        if 'burger1' in request.form:
-            btn_count += 1
-        # if not title:
-        #     flash("Title required")
+#         if 'burger1' in request.form:
+#             btn_count += 1
+#         # if not title:
+#         #     flash("Title required")
 
-        struct.append(title)
+#         struct.append(title)
 
-    # if request.method == 'POST':
-        if 'clear' in request.form:
-            btn_count = 0
-            clear_count += 1
-            struct.clear()
+#     # if request.method == 'POST':
+#         if 'clear' in request.form:
+#             btn_count = 0
+#             clear_count += 1
+#             struct.clear()
 
-    return render_template('gateway.html')
+#     return render_template('gateway.html')
 
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=8080)
