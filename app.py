@@ -80,10 +80,15 @@ def index():
         elif 'burger4' in request.form:
             # print('burger4 pressed')
             order.add(Burger('Chicken Burger',7))
+## CLEAR?
+        elif  'button2' in request.form:
+        order.cancel()
+            
         else:
             print('something not right')
             
     # print(order.get_items())
+
 
     ## Where update values will be displayed
     return render_template('some.html', value_1=order.get_printable_items(), value_2=order.get_total(), value_3=order.cancel())
