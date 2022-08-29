@@ -140,6 +140,7 @@ height: 14vh;
 left: 100px;
 top: 10px;
 font-size: 14px;
+    overflow:auto;
 }
 
 .total {
