@@ -86,7 +86,7 @@ def index():
     # print(order.get_items())
 
     ## Where update values will be displayed
-    return render_template('some.html', value_1=order.get_items(), value_2=order.get_total())
+    return render_template('some.html', value_1=order.get_printable_items(), value_2=order.get_total())
 
 ## IGNORE ## For testing
 # @app.route('/gateway', methods=['GET','POST'])

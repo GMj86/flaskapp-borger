@@ -8,7 +8,7 @@ class FoodItem:
         return self.price
 
     def __str__(self):
-        return self.name + ' : '+ str(self.get_price())        
+        return f'{self.name} -- {self.price}\n'        
 
 
 class Burger(FoodItem):
@@ -34,7 +34,11 @@ class Order:
     def __init__(self,customer):
         self.name = customer
         self.struct = []
-
+    def __str__(self) -> str:
+        x=''
+        for item in self.struct:
+            x += str(item)
+        return x
     def add(self,item: FoodItem):
         self.struct.append(item)
 
@@ -46,6 +50,12 @@ class Order:
 
     def get_item(self, index: int) -> FoodItem:
         return self.struct[index]
+
+    def get_printable_items(self):
+        x = []
+        for y in self.struct:
+            x.append(str(y))
+        return x
     
     ##
     def get_total(self) -> float:

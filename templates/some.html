@@ -35,13 +35,13 @@
                     <div class="cartitems">
                         <div class="list1">
                             <ul>
-                                <li>
                                     {% if value_1 %}
-                                    input is {{value_1}}
+                                    {% for item in value_1 %}
+                                    <li>{{item}}</li>
                                     {% else %}
-                                    input is:
+                                    <li>input:</li>
+                                    {% endfor %}
                                     {% endif %}
-                                </li>
                             </ul>
                         </div>
                     </div>
