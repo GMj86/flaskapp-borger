@@ -130,7 +130,6 @@ left:-20px;
     left:60px;;
     box-shadow: 2px 2px 1px#011622;
     background-color: rgba(255, 235, 205, 0.74);
-    overflow: auto;
 }
 
 .cartitems {
@@ -141,6 +140,7 @@ height: 14vh;
 left: 100px;
 top: 10px;
 font-size: 14px;
+overflow: auto;
 }
 
 .total {
