@@ -51,7 +51,7 @@ class Order:
     def get_total(self) -> float:
         x = 0
         for item in self.struct:
-            x += item.get_pPrice()
+            x += item.get_price()
         return x
 
 
