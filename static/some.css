@@ -433,6 +433,15 @@ filter: brightness(50%);
     background-size: cover;
 }
 
+.burger4 button:hover{
+    transform: rotate(360deg);
+}
+.side4 button:hover{
+    transform: rotate(360deg);
+}
+.drink4 button:hover{
+    transform: rotate(360deg);
+}
 .burger4 button:active {
 filter: brightness(50%);
 }
