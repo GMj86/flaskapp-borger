@@ -80,7 +80,7 @@ def index():
         elif 'burger4' in request.form:
             # print('burger4 pressed')
             order.add(Burger('Chicken Burger',7))
-## CANCEL
+## CLEAR?
         elif 'button2' in request.form:
             order.cancel()
         else:
@@ -90,7 +90,7 @@ def index():
 
 
     ## Where update values will be displayed
-    return render_template('some.html', value_1=order.get_printable_items(), value_2=order.get_total(), value_3=order.cancel())
+    return render_template('some.html', value_1=order.get_printable_items(), value_2=order.get_total())
 
 ## IGNORE ## For testing
 # @app.route('/gateway', methods=['GET','POST'])
