@@ -87,6 +87,30 @@
     margin:auto;
 }
 
+.cartbox .button1  {
+    width: 70px;
+    height: 30px;
+    left: 632px;
+    top: 70px;
+    position: relative;
+    font-size: 18px;
+    background-color: rgb(255, 202, 122);
+    border-color: rgba(143, 89, 2, 0.638);
+    color:rgba(143, 89, 2, 0.879);
+}
+
+.cartbox .button2  {
+    width: 71px;
+    height: 30px;
+    left: 559px;
+    top: 115px;
+    position: relative;
+    font-size: 18px;
+    background-color: rgb(255, 202, 122);
+    border-color: rgba(143, 89, 2, 0.638);
+    color:rgba(143, 89, 2, 0.879);
+}
+
 .cart h2{
 width:60px;
 top:-20px;
