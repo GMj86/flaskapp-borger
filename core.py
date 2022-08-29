@@ -9,7 +9,7 @@ class FoodInfo:
         return self.price
     
     def __str__(self):
-        return self.name + ' : '+ str(self.get_price())
+        return self.name + ' : '+ str(self.getprice())
 
 
 menu = []
