@@ -80,6 +80,10 @@ def index():
         elif 'burger4' in request.form:
             # print('burger4 pressed')
             order.add(Burger('Chicken Burger',7))
+            
+        elif 'button2' in request.form:
+            order.cancel()
+        
         else:
             print('something not right')
             
