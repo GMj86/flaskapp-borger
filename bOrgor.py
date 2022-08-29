@@ -4,11 +4,11 @@ class FoodItem:
         self.name = name
         self.price = price
 
-    def getprice(self):
+    def get_price(self):
         return self.price
 
     def __str__(self):
-        return self.name + ' : '+ str(self.getprice())        
+        return self.name + ' : '+ str(self.get_price())        
 
 
 class Burger(FoodItem):
@@ -35,7 +35,7 @@ class Order:
         self.name = customer
         self.struct = []
 
-    def add(self,item):
+    def add(self,item: FoodItem):
         self.struct.append(item)
 
     def cancel(self):
@@ -47,9 +47,12 @@ class Order:
     def get_item(self, index: int) -> FoodItem:
         return self.struct[index]
     
-    ##REDO
+    ##
     def get_total(self) -> float:
-        return 99.99
+        x = 0
+        for item in self.struct:
+            x += item.get_pPrice()
+        return x
 
 
 # def user_input_burger():
